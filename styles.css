@@ -1,0 +1,404 @@
+body {
+    font-family: "AudioWide", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+
+
+}
+.gamething {
+    color: #ffec16c9;
+    text-shadow: 
+    0 0 10px #ffcc00, /* Inner glow */
+    0 0 20px #ffcc00, /* Outer glow */
+    0 0 40px #ffcc00, /* Blurred glow */
+    0 0 80px #ffcc00; /* Further blurred glow */
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #000;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd700;
+    background-color: #000;
+    text-shadow: 
+    0 0 10px #ffcc00, /* Inner glow */
+    0 0 20px #ffcc00, /* Outer glow */
+    0 0 40px #ffcc00, /* Blurred glow */
+    0 0 80px #ffcc00; /* Further blurred glow */
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffd700;
+    font-weight: bold;
+    text-shadow: 
+    0 0 10px #ffcc00, /* Inner glow */
+    0 0 20px #ffcc00, /* Outer glow */
+    0 0 40px #ffcc00, /* Blurred glow */
+    0 0 80px #ffcc00; /* Further blurred glow */
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #000;
+    color: #fbff00;
+    text-shadow: 
+    0 0 10px #ffcc00, /* Inner glow */
+    0 0 20px #ffcc00, /* Outer glow */
+    0 0 40px #ffcc00, /* Blurred glow */
+    0 0 80px #ffcc00; /* Further blurred glow */
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    margin-top: 200px;
+    color: #fff700;
+    text-shadow: 
+    0 0 10px #ffcc00, /* Inner glow */
+    0 0 20px #ffcc00, /* Outer glow */
+    0 0 40px #ffcc00, /* Blurred glow */
+    0 0 80px #ffcc00; /* Further blurred glow */
+}
+
+.hero p {
+    font-size: 24px;
+}
+#categories {
+    margin-top: -400px; /* Adjust the value as needed */
+}
+
+.categories {
+    padding: 50px 20px;
+    background-color: #000000;
+    color: #ffd700;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-shadow: 
+    0 0 10px #ffcc00, /* Inner glow */
+    0 0 20px #ffcc00, /* Outer glow */
+    0 0 40px #ffcc00, /* Blurred glow */
+    0 0 80px #ffcc00; /* Further blurred glow */    
+}
+
+.category-grid {
+    display: flex;
+flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.category-item {
+    width: 30%;
+    margin-bottom: 30px;
+    padding: 10px;
+ 
+}
+.category-item {
+    position: relative; /* Required for tooltip positioning */
+}
+.tooltip {
+    position: absolute;
+    top: 40%;
+    left: 110%; /* Position to the right of the image */
+    transform: translateY(-50%);
+    background-color: #00008b;
+    color: hsl(0, 0%, 100%);
+    padding: 15px; /* Increased padding for better spacing */
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    width: 700px; /* Increased width for longer messages */
+    text-align: left; /* Align text to the left for better readability */
+    line-height: 1.8; /* Improve readability for longer text */
+  
+    
+}
+.category-item:hover .tooltip {
+    opacity: 1; /* Show tooltip on hover */
+    visibility: visible;
+}
+.category-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+.category-item img:hover {
+    transform: scale(1.05) translateY(-5px); /* Slightly increase size and move up */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+}
+.category-item h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    text-shadow: 
+    0 0 10px #ffcc00, /* Inner glow */
+    0 0 20px #ffcc00, /* Outer glow */
+    0 0 40px #ffcc00, /* Blurred glow */
+    0 0 80px #ffcc00; /* Further blurred glow */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #ffd700;
+    text-shadow: 
+    0 0 10px #ffcc00, /* Inner glow */
+    0 0 20px #ffcc00, /* Outer glow */
+    0 0 40px #ffcc00, /* Blurred glow */
+    0 0 80px #ffcc00; /* Further blurred glow */
+}
+
+footer .social-media {
+    margin-bottom: 20px;
+}
+
+footer .social-media a {
+    color: #ffd700;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+
+/* Instagram icon hover color */
+footer .social-media a:nth-child(1):hover {
+    color: #e13030; /* Instagram's brand color */
+}
+
+/* WhatsApp icon hover color */
+footer .social-media a:nth-child(2):hover {
+    color: #25D366; /* WhatsApp's brand color */
+}
+
+/* Email icon hover color */
+footer .social-media a:nth-child(3):hover {
+    color: #ffffff; /* Gmail's brand color */
+}
+ .hero {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 200px;
+    background-image: url('https://i.ibb.co/S4FSjb9g/75083474982.png');
+}
+.tooltip {
+    /* Existing styles */
+    transform: translateY(-50%) translateX(10px); /* Start slightly to the right */
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.category-item:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) translateX(0); /* Slide into position */
+}
+
+
+.color1 {
+    background-color: #00008b;
+}
+.category:nth-child(1){
+    background-color: #ff6666; /* Light red for the second category */
+
+}
+
+.categories2 {
+    padding: 50px 0px;
+    background-color: #ffd700;
+    color: #000000;
+    text-align: center;
+    
+}
+
+.categories2, h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+#game-section {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    width: 450px;
+    margin: 0 auto;
+}
+
+canvas {
+    border: 2px solid white;
+    background: black;
+    width: 500px;
+}
+
+button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+  
+}
+h4 {
+    user-select: none;
+}
+button:hover {
+    background: #e64a19;
+}
+.game-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Adds spacing between game and controls */
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+    width: 550px; /* Adjust if needed */
+    margin: 0 auto;
+}
+
+.game-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-controls {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 14px;
+    min-width: 150px;
+}
+
+.game-controls h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.game-controls p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.tooltip {
+    position: absolute;
+    top: 40%;
+    left: 110%; /* Position to the right of the image */
+    transform: translateY(-50%);
+    background-color: #00008b;
+    color: hsl(0, 0%, 100%);
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    width: 700px; /* Increased width for longer messages */
+    text-align: left;
+    line-height: 1.8;
+}
+
+.category-item:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth show effect */
+}
+
+/* Prevent horizontal overflow */
+html, body {
+    overflow-x: hidden; /* Hides horizontal overflow */
+    width: 100%; /* Ensures the body takes up the full viewport width */
+    max-width: 100%; /* Prevents the body from exceeding the viewport width */
+}
+
+/* Ensure all elements stay within the viewport */
+* {
+    box-sizing: border-box; /* Ensures padding and borders are included in element widths */
+    margin: 0;
+    padding: 0;
+}
+    /* Alternatively, show a message instead of the site content */
+    .message {
+        display: block;
+        text-align: center;
+        padding: 50px;
+        font-size: 24px;
+    }
+    @media (max-width: 768px) {
+        #game-section {
+            display: none;
+        }
+    }
+    @media (max-width: 768px) {
+        ul, a {
+            display: none;
+        }
+    }
+@media (max-width: 768px) {
+    .message {
+        display: block;
+        text-align: center;
+        padding: 50px;
+        font-size: 24px;
+        background-color: #ffcc00;
+        color: #000;
+        border-radius: 5px;
+    }
+}
+#desktop-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffcc00;
+    color: #000;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 9999;
+}
