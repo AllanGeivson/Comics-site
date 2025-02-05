@@ -104,7 +104,9 @@ header nav ul li a {
     0 0 40px #ffcc00, /* Blurred glow */
     0 0 80px #ffcc00; /* Further blurred glow */    
 }
-
+h3 {
+    user-agent: none
+}
 .category-grid {
     display: flex;
 flex-direction: column;
